@@ -4,9 +4,7 @@ let links = Array.from(document.querySelectorAll('.menu__link'));
 
 links.forEach(link => {
     link.addEventListener('click', (event) => {
-        if (link.closest('.menu_active')) {
-            event.preventDefault();
-        } else if (link.nextElementSibling) {
+         if (link.nextElementSibling) {
             event.preventDefault();
             let activeMenu = link.nextElementSibling.classList.contains('menu_active');
             checkAndDeleteMenuActive();

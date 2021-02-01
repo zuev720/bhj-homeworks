@@ -35,3 +35,7 @@ body {
 .welcome_active {
   display: block;
 }
+
+.logout__btn {
+  background: red;
+}
